@@ -456,13 +456,31 @@ void analyze_segments( char * sample_segment, char ** candidate_segments, int nu
 	int sample_length     = 0;
 	int candidate_length  = 0;
 	int i                 = 0;
-	int has_perfect_match = 0;
+	int has_perfect_match = 1;//0;
 	int score             = 0;
+
+	int j;
 
 	/* Hint: Check to see if any candidate segment(s) are a perfect match, and report them
 	   (REMEMBER: don't ignore trailing nucleotides when searching for a perfect score) */
 	
-	// Insert your code here
+	for (i = 1; i <= number_of_candidates; i++) {
+		if (strlen(sample_segment) == strlen(candidate_segments)) {
+			if (has_perfect_match != 0) {
+				for (j = 0; j < strlen(sample_segment; j++) {
+					if ((sample_segment + j) == (candidate_segments + j)) {
+						has_perfect_match = 1;
+					}
+					else {
+						has_perfect_match = 0;
+					}
+				}
+			}
+		}
+		if (has_perfect_match == 1) {
+			printf("Candidate number %d is a perfect match\n", i);
+		}
+	}
 
 	/* Hint: Return early if we have found and reported perfect match(es) */
 	
@@ -517,7 +535,13 @@ int calculate_score( char * sample_segment, char * candidate_segment)
 	int sample_length    = strlen( sample_segment );
 	int candidate_length = strlen( candidate_segment );
 	int sample_length_in_codons = sample_length / 3;
+	int length;
 
-	// Insert your code here (replace this return statement with your own code)
+	//for (length = 0; length < sample_length_in_codons; length += 3) {
+
+	//}
+
+	if (sample_segment )
+
 	return 0;
 }
