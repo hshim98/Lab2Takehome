@@ -456,7 +456,7 @@ void analyze_segments( char * sample_segment, char ** candidate_segments, int nu
 	int sample_length     = 0;
 	int candidate_length  = 0;
 	int i                 = 0;
-	int has_perfect_match = 1;//0;
+	int has_perfect_match = 2;//0;
 	int score             = 0;
 
 	int j;
@@ -479,18 +479,17 @@ void analyze_segments( char * sample_segment, char ** candidate_segments, int nu
 		}
 		if (has_perfect_match == 1) {
 			printf("Candidate number %d is a perfect match\n", i);
+			break;
 		}
 	}
 
 	/* Hint: Return early if we have found and reported perfect match(es) */
 	
-	// Insert your code here
 
-	/* Hint: sOtherwise we need to calculate and print all of the scores by invoking
+	/* Hint: Otherwise we need to calculate and print all of the scores by invoking
 	   calculate_score for each candidate_segment and printing each result */
 	for (i = 0; i < number_of_candidates; ++i) {
-		
-		// Insert your code here - maybe a call to calculate_score?
+		*(scores + i) = calculate_score(sample_segment, candidate_segments + i);
 	}
 
 	/* End of function */

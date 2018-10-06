@@ -15,5 +15,5 @@
 	Both partners worked evenly on all aspects of the program and both contibuted ~50% each.
 6. Division of Workload
 	We both worked together in determining the logic of the program as well as going through as debugging the program. Hubert focused more on the 
-	____ part of the code and Lisa worked on ___, while both assisted in the development of the code for the other partner.
+	____ part of the code and Lisa worked mainly on the analyze_segments function and assisted with the calculate_score function, while both assisted in the development of the code for the other partner.
 7. "We have read and understood the plagiarism policies at https://www.cs.ubc.ca/our-department/administration/policies/collaboration and we understand that no excuse for plagiarism will be accepted, including any listed in http://www.cs.ubc.ca/~tmm/courses/cheat.html".
