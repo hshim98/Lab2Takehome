@@ -467,7 +467,7 @@ void analyze_segments( char * sample_segment, char ** candidate_segments, int nu
 	for (i = 1; i <= number_of_candidates; i++) {
 		if (strlen(sample_segment) == strlen(candidate_segments)) {
 			if (has_perfect_match != 0) {
-				for (j = 0; j < strlen(sample_segment; j++) {
+				for (j = 0; j < strlen(sample_segment); j++) {
 					if ((sample_segment + j) == (candidate_segments + j)) {
 						has_perfect_match = 1;
 					}
